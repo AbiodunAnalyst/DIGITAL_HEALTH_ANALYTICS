@@ -60,6 +60,5 @@ The project solution plan is divided into three part
 ---
 
 ## PROGRAM EXECUTION
-You can interact with the project [here](https://drive.google.com/drive/folders/14SV_hwDD7A1jpqC6m8kecsiNwlw_rFF-?usp=drive_link)
 
 You can interact with the project video [here](https://drive.google.com/file/d/1BW3Iv3hMrpxQD75kBUCzs2YCWWUqrJOq/view?usp=drive_link)
