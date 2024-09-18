@@ -4,7 +4,7 @@
 
 
 ## INTRODUCTION
-###### Digital health is transforming not only how people’s health is managed but also helping to prevent avoidable deaths. From translating health data and care into actions, it is gradually becoming an integral part of how health care providers and patients themselves manage health related problems. In addition, the availability of network enabled devices such as smartphone and wearable devices is enabling mobile medical apps and software that can provide support for clinicians to make clinical decisions using available data and artificial intelligence (AI) or machine learning (ML). 
+#### Digital health is transforming not only how people’s health is managed but also helping to prevent avoidable deaths. From translating health data and care into actions, it is gradually becoming an integral part of how health care providers and patients themselves manage health related problems. In addition, the availability of network enabled devices such as smartphone and wearable devices is enabling mobile medical apps and software that can provide support for clinicians to make clinical decisions using available data and artificial intelligence (AI) or machine learning (ML). 
 The project looks at developing an interactive interface that will allow user to select from range of selection what vital health information they want to see. The project is divided into three part, the first part is where the data is loaded, the second part of the project looks at creating a query modules that contains all function and method the program want to solve  and the last which is the third part contain the user interface where all the interaction  of the query module, the data set, the menu selection, and the display code reside
 ---
 
