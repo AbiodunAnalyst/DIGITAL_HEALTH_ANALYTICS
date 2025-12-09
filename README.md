@@ -37,9 +37,9 @@
 
 This project implements a clinically oriented **Digital Health Analytics system** designed to assist clinicians in analysing vital patient indicators, identifying risk patterns, and preventing fatal heart failure outcomes. The project incorporates **data ingestion**, **intelligent query modules**, and a **fully interactive user interface**, all built in Python.
 
-The system is implemented across three core components:
-
 ---
+
+The system is implemented across three core components:
 
 ### 🔹 1. Data Loading & Pre-Processing
 A custom-built ingestion pipeline loads clinical records from the **Heart Failure Clinical Records dataset** (UCI repository).  
