@@ -1,3 +1,160 @@
+
+<h1 align="center">🩺 Digital Health Analytics Platform</h1>
+
+<p align="center">
+  <strong>Clinical Data Engineering • Python Analytics Engine • Decision Support System • Healthcare Informatics</strong>
+</p>
+
+<p align="center">
+  A modular digital health analytics system designed to analyse clinical indicators, identify high-risk patient groups, 
+  and support healthcare decision-making using structured Python data processing, custom query modules, and interactive reporting.
+</p>
+
+<p align="center">
+
+  <!-- Languages -->
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+
+  <!-- Health Analytics -->
+  <img src="https://img.shields.io/badge/Digital%20Health-0099cc?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Clinical%20Analytics-AA3377?style=for-the-badge" />
+
+  <!-- Tools -->
+  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" />
+  <img src="https://img.shields.io/badge/Tabulate-4B8BBE?style=for-the-badge" />
+
+  <!-- Status -->
+  <img src="https://img.shields.io/badge/Status-Production--Ready-green?style=for-the-badge" />
+
+</p>
+
+---
+
+<p align="center">
+  <em>This project is part of my Global Talent Visa technical portfolio, showcasing applied healthcare analytics, 
+  modular Python engineering, and end-to-end digital health solution design.</em>
+</p>
+
+---
+
+       ┌────────────────────┐
+       │     Load Data      │
+       │ (clinical records) │
+       └─────────┬──────────┘
+                 ▼
+       ┌────────────────────┐
+       │   Query Module     │
+       │  (analytics engine)│
+       └─────────┬──────────┘
+                 ▼
+       ┌────────────────────┐
+       │  User Interface    │
+       │ (menu-driven CLI)  │
+       └─────────┬──────────┘
+                 ▼
+       ┌────────────────────┐
+       │   Results Output   │
+       │ (tabulate + CSV)   │
+       └────────────────────┘
+
+
+---
+
+## 🩺 Digital Health Analytics Platform (Python)
+
+This project implements a clinically oriented **Digital Health Analytics system** designed to assist clinicians in analysing vital patient indicators, identifying risk patterns, and preventing fatal heart failure outcomes. The project incorporates **data ingestion**, **intelligent query modules**, and a **fully interactive user interface**, all built in Python.
+
+The system is implemented across three core components:
+
+---
+
+### 🔹 1. Data Loading & Pre-Processing
+A custom-built ingestion pipeline loads clinical records from the **Heart Failure Clinical Records dataset** (UCI repository).  
+Key steps include:
+
+- CSV ingestion using `csv.DictReader`
+- Error & exception handling during file loading  
+- Automatic **schema mapping** into structured dictionaries  
+- Type conversion for all clinical variables  
+- Creation of a **unique `id` field** for each record (to support traceability & indexing)
+
+> The implementation details are described in CHAPTER 4 of the project documentation (Implementation Report).  
+:contentReference[oaicite:2]{index=2}
+
+---
+
+### 🔹 2. Query Module (Analytics & Risk Functions)
+
+The **QueryModule** class encapsulates all analytical functions the system provides.  
+It supports:
+
+- **Age statistics** (average, median, mode) for patients whose heart failure resulted in death  
+- **Survival-time analysis** for patients who recovered  
+- **Cardiovascular risk profiling** for:
+  - high blood pressure  
+  - diabetes  
+  - anaemia  
+- **Risk interaction analysis**:
+  - diabetes × smoking × high blood pressure  
+- **Serum sodium analysis** for diabetic patients  
+- **Risk factor sampling & variance metrics** (serum creatinine, CPK, etc.)
+- **Automatic CSV export** of all results for clinical audit or reporting
+
+This module acts as the system’s *analytics engine*.
+
+---
+
+### 🔹 3. Interactive User Interface (CLI)
+
+A structured, menu-driven CLI allows users (clinicians, analysts, students) to:
+
+- Navigate eight health-analytics options  
+- Perform quick exploratory risk analysis  
+- Export analysis summaries as CSV files  
+- View results in tabulated format (`tabulate` library)
+
+The UI integrates tightly with QueryModule and is described in CHAPTER 6 program flowchart  
+:contentReference[oaicite:3]{index=3}  
+which illustrates:
+
+---
+
+## 🧠 Key Analytics Capabilities
+
+### ✔ Age distribution analysis for fatal vs non-fatal heart failure  
+### ✔ Cardiovascular risk clustering (HBP, diabetes, anaemia)  
+### ✔ Analysis of patient lifestyle indicators (smoking)  
+### ✔ Electrolyte and enzyme-level analysis  
+### ✔ Interactive clinical decision-support queries  
+### ✔ Automated CSV data persistence for reporting  
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## DIGITAL HEALTH ANALYTICS
 
 ![image](https://github.com/AbiodunAnalyst/DIGITAL_HEALTH_ANALYTICS/assets/110310940/16911222-4a5f-4462-8a56-a0c755d68d1e)
