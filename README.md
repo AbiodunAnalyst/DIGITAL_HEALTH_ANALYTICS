@@ -86,8 +86,7 @@ A structured, menu-driven CLI allows users (clinicians, analysts, students) to:
 - Perform quick exploratory risk analysis  
 - Export analysis summaries as CSV files  
 - View results in tabulated format (`tabulate` library)
-
-The UI integrates tightly with QueryModule 
+- The UI integrates tightly with QueryModule 
 
 ---
 ##  Flow diagram
@@ -126,7 +125,7 @@ The UI integrates tightly with QueryModule
 
 ---
 
-## 🩺 Problem → Solution Narrative (Clinical Perspective)
+## 🩺 Problem → Solution Narrative
 
 ### 🔍 The Problem
 Heart failure remains one of the leading causes of hospitalisation and mortality worldwide.  
