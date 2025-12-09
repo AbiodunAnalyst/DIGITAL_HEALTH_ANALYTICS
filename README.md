@@ -121,12 +121,12 @@ A structured, menu-driven CLI allows users (clinicians, analysts, students) to:
 
 ## 🧠 Key Analytics Capabilities
 
-### ✔ Age distribution analysis for fatal vs non-fatal heart failure  
-### ✔ Cardiovascular risk clustering (HBP, diabetes, anaemia)  
-### ✔ Analysis of patient lifestyle indicators (smoking)  
-### ✔ Electrolyte and enzyme-level analysis  
-### ✔ Interactive clinical decision-support queries  
-### ✔ Automated CSV data persistence for reporting  
+- Age distribution analysis for fatal vs non-fatal heart failure  
+- Cardiovascular risk clustering (HBP, diabetes, anaemia)  
+- Analysis of patient lifestyle indicators (smoking)  
+- Electrolyte and enzyme-level analysis  
+- Interactive clinical decision-support queries  
+- Automated CSV data persistence for reporting  
 
 ---
 
@@ -149,36 +149,12 @@ These issues slow decision-making, obscure important clinical relationships, and
 ---
 
 ### 🚀 The Solution
-To bridge this gap, I developed a **Digital Health Analytics Platform**—a modular Python-based system that transforms raw clinical data into actionable insights.
-
-The solution provides:
-
-#### **1️⃣ Automated Clinical Data Ingestion**
-- Reads raw heart failure records from CSV
-- Validates and standardises fields into structured Python objects
-- Generates unique patient IDs and enforces consistent data types
-
-#### **2️⃣ A Powerful Clinical Analytics Engine (QueryModule)**
-Supports targeted, clinically relevant analyses, including:
-
-- Age trends for fatal vs. non-fatal heart failure  
-- Survival-time analysis for recovered patients  
-- Cardiovascular risk clustering (high BP, diabetes, anaemia)  
-- Interaction effects between lifestyle and clinical factors  
-- Serum sodium & creatinine risk profiling  
+To bridge this gap, I developed a **Digital Health Analytics Platform** a modular Python-based system that transforms raw clinical data into actionable insights.
 
 ## 🌐 Streamlit Web Application – Digital Health Analytics
 
 This project includes a **Streamlit-based clinical analytics web app** that allows clinicians and analysts 
 to explore heart failure data, visualise patterns, and run a simple machine learning model for mortality risk prediction.
----
-
-<h3 align="center">
-  <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" />
-  <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white" />
-  <img src="https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=python&logoColor=white" />
-</h3>
-
 ---
 
 ### 🚀 Features
@@ -206,28 +182,6 @@ to explore heart failure data, visualise patterns, and run a simple machine lear
   - See Accuracy, ROC AUC, confusion matrix, and classification report
   - Visualise feature importance
   - Use an interactive form to predict risk for a **single patient**
-
----
-
-
-
-
-
-
-#### **3️⃣ Simple, Guided User Interface**
-A menu-driven CLI allows clinicians or analysts—regardless of technical ability—to:
-
-- Select predefined health analytics queries  
-- Instantly view results in a clean tabular format  
-- Export findings as CSV files for audit, reporting, or research
-
-#### **4️⃣ Automated Evidence Export**
-All outputs can be saved using a timestamped export module, ensuring traceability and repeatability for:
-
-- Case reviews  
-- Quality improvement initiatives  
-- Research studies  
-- Clinical audits  
 
 ---
 
