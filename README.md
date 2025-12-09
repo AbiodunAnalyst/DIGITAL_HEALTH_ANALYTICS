@@ -186,7 +186,7 @@ to explore heart failure data, visualise patterns, and run a simple machine lear
   - Visualise feature importance
   - Use an interactive form to predict risk for a **single patient**
 
-Health_app (Health_app)[https://digitalhealthanalytics-ciakssrts5fjppxcjpwmy6.streamlit.app]
+**Health_app** *[Health_app](https://digitalhealthanalytics-ciakssrts5fjppxcjpwmy6.streamlit.app)*
 
 ### 🩺 Clinical Impact
 This platform enables healthcare teams to:
