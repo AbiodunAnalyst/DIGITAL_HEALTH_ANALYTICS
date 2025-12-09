@@ -37,29 +37,6 @@
 
 ---
 
-       ┌────────────────────┐
-       │     Load Data      │
-       │ (clinical records) │
-       └─────────┬──────────┘
-                 ▼
-       ┌────────────────────┐
-       │   Query Module     │
-       │  (analytics engine)│
-       └─────────┬──────────┘
-                 ▼
-       ┌────────────────────┐
-       │  User Interface    │
-       │ (menu-driven CLI)  │
-       └─────────┬──────────┘
-                 ▼
-       ┌────────────────────┐
-       │   Results Output   │
-       │ (tabulate + CSV)   │
-       └────────────────────┘
-
-
----
-
 ## 🩺 Digital Health Analytics Platform (Python)
 
 This project implements a clinically oriented **Digital Health Analytics system** designed to assist clinicians in analysing vital patient indicators, identifying risk patterns, and preventing fatal heart failure outcomes. The project incorporates **data ingestion**, **intelligent query modules**, and a **fully interactive user interface**, all built in Python.
@@ -77,9 +54,6 @@ Key steps include:
 - Automatic **schema mapping** into structured dictionaries  
 - Type conversion for all clinical variables  
 - Creation of a **unique `id` field** for each record (to support traceability & indexing)
-
-> The implementation details are described in CHAPTER 4 of the project documentation (Implementation Report).  
-:contentReference[oaicite:2]{index=2}
 
 ---
 
@@ -113,9 +87,31 @@ A structured, menu-driven CLI allows users (clinicians, analysts, students) to:
 - Export analysis summaries as CSV files  
 - View results in tabulated format (`tabulate` library)
 
-The UI integrates tightly with QueryModule and is described in CHAPTER 6 program flowchart  
-:contentReference[oaicite:3]{index=3}  
-which illustrates:
+The UI integrates tightly with QueryModule 
+
+---
+##  Flow diagram
+
+       ┌────────────────────┐
+       │     Load Data      │
+       │ (clinical records) │
+       └─────────┬──────────┘
+                 ▼
+       ┌────────────────────┐
+       │   Query Module     │
+       │  (analytics engine)│
+       └─────────┬──────────┘
+                 ▼
+       ┌────────────────────┐
+       │  User Interface    │
+       │ (menu-driven CLI)  │
+       └─────────┬──────────┘
+                 ▼
+       ┌────────────────────┐
+       │   Results Output   │
+       │ (tabulate + CSV)   │
+       └────────────────────┘
+
 
 ---
 
