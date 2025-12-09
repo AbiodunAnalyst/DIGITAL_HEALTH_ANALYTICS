@@ -35,13 +35,6 @@
 
 ---
 
-<p align="center">
-  <em>This project is part of my Global Talent Visa technical portfolio, showcasing applied healthcare analytics, 
-  modular Python engineering, and end-to-end digital health solution design.</em>
-</p>
-
----
-
 ## 🩺 Digital Health Analytics Platform (Python)
 
 This project implements a clinically oriented **Digital Health Analytics system** designed to assist clinicians in analysing vital patient indicators, identifying risk patterns, and preventing fatal heart failure outcomes. The project incorporates **data ingestion**, **intelligent query modules**, and a **fully interactive user interface**, all built in Python.
@@ -149,16 +142,9 @@ These issues slow decision-making, obscure important clinical relationships, and
 ---
 
 ### 🚀 The Solution
-To bridge this gap, I developed a **Digital Health Analytics Platform** a modular Python-based system that transforms raw clinical data into actionable insights.
+To bridge this gap, I developed a **Digital Health Analytics Platform** a Streamlit Web Application system that transforms raw clinical data into actionable insights.
 
 ---
-
-## 🌐 Streamlit Web Application – Digital Health Analytics
-
-
-**This project includes a **Streamlit-based clinical analytics web app** that allows clinicians and analysts 
-to explore heart failure data, visualise patterns, and run a simple machine learning model for mortality risk prediction.**
-
 
 ### 🚀 Features
 
