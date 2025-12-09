@@ -166,6 +166,7 @@ Supports targeted, clinically relevant analyses, including:
 
 This project includes a **Streamlit-based clinical analytics web app** that allows clinicians and analysts 
 to explore heart failure data, visualise patterns, and run a simple machine learning model for mortality risk prediction.
+---
 
 <h3 align="center">
   <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" />
@@ -203,18 +204,7 @@ to explore heart failure data, visualise patterns, and run a simple machine lear
 
 ---
 
-### ▶ How to Run Locally
 
-```bash
-# 1. Create and activate a virtual environment (optional but recommended)
-python -m venv venv
-source venv/bin/activate       # On Windows: venv\Scripts\activate
-
-# 2. Install dependencies
-pip install -r requirements.txt
-
-# 3. Run the Streamlit app
-streamlit run streamlit_app.py
 
 
 
