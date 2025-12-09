@@ -26,6 +26,11 @@
   <!-- Status -->
   <img src="https://img.shields.io/badge/Status-Production--Ready-green?style=for-the-badge" />
 
+<h3 align="center">
+  <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" />
+  <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white" />
+  <img src="https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=python&logoColor=white" />
+</h3>
 </p>
 
 ---
