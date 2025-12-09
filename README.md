@@ -162,6 +162,63 @@ Supports targeted, clinically relevant analyses, including:
 - Interaction effects between lifestyle and clinical factors  
 - Serum sodium & creatinine risk profiling  
 
+## 🌐 Streamlit Web Application – Digital Health Analytics
+
+This project includes a **Streamlit-based clinical analytics web app** that allows clinicians and analysts 
+to explore heart failure data, visualise patterns, and run a simple machine learning model for mortality risk prediction.
+
+<h3 align="center">
+  <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" />
+  <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white" />
+  <img src="https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=python&logoColor=white" />
+</h3>
+
+---
+
+### 🚀 Features
+
+- **Data ingestion**
+  - Upload your own heart failure dataset (`.csv`) or use the built-in default file  
+  - Automatic cleaning and typing via `analytics.py`
+
+- **Descriptive analytics**
+  - Global numeric summary (mean, std, quartiles, etc.)
+  - Age statistics for **fatal vs non-fatal** heart failure cases
+  - Survival time analysis for recovered patients
+  - Cardiometabolic risk clustering (High BP × Diabetes × Anaemia)
+  - Lifestyle risk interactions (Smoking × Diabetes × High BP)
+  - Serum sodium comparison for diabetic vs non-diabetic patients
+
+- **Visualisations**
+  - Boxplot of age by outcome (survived vs died)
+  - Line chart of survival time distribution
+  - Bar charts of risk cluster distributions
+
+- **Machine learning**
+  - Train a **Random Forest classifier** on the dataset
+  - Adjust number of trees and max depth from the sidebar
+  - See Accuracy, ROC AUC, confusion matrix, and classification report
+  - Visualise feature importance
+  - Use an interactive form to predict risk for a **single patient**
+
+---
+
+### ▶ How to Run Locally
+
+```bash
+# 1. Create and activate a virtual environment (optional but recommended)
+python -m venv venv
+source venv/bin/activate       # On Windows: venv\Scripts\activate
+
+# 2. Install dependencies
+pip install -r requirements.txt
+
+# 3. Run the Streamlit app
+streamlit run streamlit_app.py
+
+
+
+
 #### **3️⃣ Simple, Guided User Interface**
 A menu-driven CLI allows clinicians or analysts—regardless of technical ability—to:
 
