@@ -155,10 +155,10 @@ To bridge this gap, I developed a **Digital Health Analytics Platform** a modula
 
 ## 🌐 Streamlit Web Application – Digital Health Analytics
 
----
+
 **This project includes a **Streamlit-based clinical analytics web app** that allows clinicians and analysts 
 to explore heart failure data, visualise patterns, and run a simple machine learning model for mortality risk prediction.**
----
+
 
 ### 🚀 Features
 
@@ -186,7 +186,6 @@ to explore heart failure data, visualise patterns, and run a simple machine lear
   - Visualise feature importance
   - Use an interactive form to predict risk for a **single patient**
 
----
 
 ### 🩺 Clinical Impact
 This platform enables healthcare teams to:
