@@ -33,6 +33,49 @@
 
 ---
 
+# 🩺 Digital Health Clinical Analytics Platform  
+### AI-Driven Risk Analysis & Decision Support for Heart Failure Patients
+
+This project delivers an end-to-end clinical analytics and machine-learning system for heart failure risk prediction.  
+It includes a **data processing engine**, **exploratory analysis toolkit**, **risk stratification models**, and a fully interactive **Streamlit dashboard** for clinicians.
+
+---
+
+## ⭐ Technical Leadership Summary  
+This project demonstrates full-stack data science and technical leadership:
+
+- **Designed** the end-to-end architecture for clinical risk analytics  
+- **Built** a modular Python analytics engine (data cleaning, statistical analysis, ML modeling)  
+- **Developed** an interactive Streamlit app for real-time clinical decision support  
+- **Implemented** explainable ML (feature importance, clinical risk markers)  
+- **Delivered** a product-level interface clinicians can use to explore medical risks  
+- **Integrated** prediction scoring for single-patient mortality risk  
+
+This aligns with Global Talent Visa criteria for **innovation**, **technical expertise**, and **product impact**.
+
+---
+
+# 📘 1. Project Overview
+
+Heart failure remains a major cause of hospitalization and mortality.  
+Clinicians often lack simple, visual, and data-driven tools to understand:
+
+- Which patients are at highest risk  
+- What clinical markers influence outcomes  
+- How long patients survive after intervention  
+- How risk factors interact (diabetes × hypertension × smoking)  
+
+This project transforms raw clinical records into **actionable analytics** and **predictive insights**.
+
+---
+
+# 📂 2. Project Structure
+
+
+
+
+---
+
 ## 🩺 Digital Health Analytics Platform
 
 This project implements a clinically oriented **Digital Health Analytics system** designed to assist clinicians in analysing vital patient indicators, identifying risk patterns, and preventing fatal heart failure outcomes. The project incorporates **data ingestion**, **intelligent query modules**, and a **fully interactive user interface**.
