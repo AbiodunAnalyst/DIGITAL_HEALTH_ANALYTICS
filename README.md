@@ -102,8 +102,6 @@ A structured, menu-driven application that allows users (clinicians, analysts, s
 
 🔮 Single Patient Risk Prediction
 
----
-
 Uses a pre-trained Random Forest classifier to estimate mortality risk for a new patient based on:
 - Age
 - Anaemia
