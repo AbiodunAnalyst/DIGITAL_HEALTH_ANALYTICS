@@ -36,56 +36,22 @@
 # 🩺 Digital Health Clinical Analytics Platform  
 ### AI-Driven Risk Analysis & Decision Support for Heart Failure Patients
 
-This project delivers an end-to-end clinical analytics and machine-learning system for heart failure risk prediction.  
-It includes a **data processing engine**, **exploratory analysis toolkit**, **risk stratification models**, and a fully interactive **Streamlit dashboard** for clinicians.
+The Digital Health Analytics Platform is an end-to-end clinical analytics system designed to help clinicians, data analysts, and researchers analyse heart-failure patient data, uncover hidden risk patterns, and support early clinical decision-making.
 
----
+It combines:
 
-## ⭐ Technical Leadership Summary  
-This project demonstrates full-stack data science and technical leadership:
-
-- **Designed** the end-to-end architecture for clinical risk analytics  
-- **Built** a modular Python analytics engine (data cleaning, statistical analysis, ML modeling)  
-- **Developed** an interactive Streamlit app for real-time clinical decision support  
-- **Implemented** explainable ML (feature importance, clinical risk markers)  
-- **Delivered** a product-level interface clinicians can use to explore medical risks  
-- **Integrated** prediction scoring for single-patient mortality risk  
-
-This aligns with Global Talent Visa criteria for **innovation**, **technical expertise**, and **product impact**.
-
----
-
-# 📘 1. Project Overview
-
-Heart failure remains a major cause of hospitalization and mortality.  
-Clinicians often lack simple, visual, and data-driven tools to understand:
-
-- Which patients are at highest risk  
-- What clinical markers influence outcomes  
-- How long patients survive after intervention  
-- How risk factors interact (diabetes × hypertension × smoking)  
-
-This project transforms raw clinical records into **actionable analytics** and **predictive insights**.
-
----
-
-# 📂 2. Project Structure
-
-
-
-
----
-
-## 🩺 Digital Health Analytics Platform
-
-This project implements a clinically oriented **Digital Health Analytics system** designed to assist clinicians in analysing vital patient indicators, identifying risk patterns, and preventing fatal heart failure outcomes. The project incorporates **data ingestion**, **intelligent query modules**, and a **fully interactive user interface**.
+- Automated data ingestion & cleaning
+- A reusable analytics engine (statistics + risk profiling)
+- An interactive Streamlit web interface
+- Optional ML-based single-patient risk prediction
+- Built using Python, Streamlit, Pandas, and Scikit-Learn, the platform transforms raw clinical data into interpretable visual insights that support proactive healthcare.
 
 ---
 
 The system is implemented across three core components:
 
 ### 🔹 1. Data Loading & Pre-Processing
-A custom-built ingestion pipeline loads clinical records from the **Heart Failure Clinical Records dataset** (UCI repository).  
+A custom-built ingestion pipeline loads clinical records from the **Heart Failure Clinical Records dataset**.  
 Key steps include:
 
 - CSV ingestion using `csv.DictReader`
@@ -117,50 +83,71 @@ This module acts as the system’s *analytics engine*.
 
 ---
 
-### 🔹 3. Interactive User Interface (CLI)
+### 🔹 3. Interactive Streamlt Application 
 
-A structured, menu-driven CLI allows users (clinicians, analysts, students) to:
+A structured, menu-driven application that allows users (clinicians, analysts, students) to:
 
 - Navigate eight health-analytics options  
 - Perform quick exploratory risk analysis  
 - Export analysis summaries as CSV files  
 - View results in tabulated format (`tabulate` library)
-- The UI integrates tightly with QueryModule 
-
----
-##  Flow diagram
-
-       ┌────────────────────┐
-       │     Load Data      │
-       │ (clinical records) │
-       └─────────┬──────────┘
-                 ▼
-       ┌────────────────────┐
-       │   Query Module     │
-       │  (analytics engine)│
-       └─────────┬──────────┘
-                 ▼
-       ┌────────────────────┐
-       │  User Interface    │
-       │ (menu-driven CLI)  │
-       └─────────┬──────────┘
-                 ▼
-       ┌────────────────────┐
-       │   Results Output   │
-       │ (tabulate + CSV)   │
-       └────────────────────┘
-
+- Visualisations:
+  - Age boxplot by outcome
+  - Survival time distribution
+  - Line charts
+  - Bar charts for grouped risk clusters
+- ML prediction
 
 ---
 
-## 🧠 Key Analytics Capabilities
+🔮 Single Patient Risk Prediction
 
-- Age distribution analysis for fatal vs non-fatal heart failure  
-- Cardiovascular risk clustering (HBP, diabetes, anaemia)  
-- Analysis of patient lifestyle indicators (smoking)  
-- Electrolyte and enzyme-level analysis  
-- Interactive clinical decision-support queries  
-- Automated CSV data persistence for reporting  
+---
+
+Uses a pre-trained Random Forest classifier to estimate mortality risk for a new patient based on:
+- Age
+- Anaemia
+- Diabetes
+- High BP
+- Smoking
+- Ejection fraction
+- Serum creatinine
+- Serum sodium
+- Follow-up time
+
+---
+
+
+
+##  System Architecture diagram
+
+                   ┌────────────────────────┐
+                   │   Clinical Dataset      │
+                   │ (CSV – UCI Repository)  │
+                   └───────────┬────────────┘
+                               ▼
+                 ┌────────────────────────────┐
+                 │  Data Loading & Cleaning   │
+                 │  (analytics.py pipeline)   │
+                 └───────────┬───────────────┘
+                               ▼
+                 ┌────────────────────────────┐
+                 │     Analytics Engine       │
+                 │ (risk profiling, stats,    │
+                 │  survival analysis, etc.)  │
+                 └───────────┬───────────────┘
+                               ▼
+              ┌───────────────────────────────────┐
+              │        Streamlit Application       │
+              │ (UI, charts, menu-driven analysis) │
+              └───────────┬───────────────────────┘
+                          ▼
+              ┌───────────────────────────────────┐
+              │        Results & Predictions       │
+              │ (tables, plots, CSV export, ML)    │
+              └───────────────────────────────────┘
+
+
 
 ---
 
@@ -178,7 +165,11 @@ Key challenges include:
 - No simple tool for clinicians to run data-driven queries without coding  
 - Lack of automated exports for audits, research, or quality improvement  
 
-These issues slow decision-making, obscure important clinical relationships, and increase the risk of missed early warning signs.
+This leads to:
+- Missed high-risk patterns
+- Slow decision-making
+- No easy understanding of interactions between conditions (e.g., diabetes × hypertension × smoking)
+- No accessible analytics tools for clinicians who cannot code
 
 ---
 
@@ -223,6 +214,4 @@ This platform enables healthcare teams to:
 - Analyse multiple clinical and lifestyle factors simultaneously  
 - Make faster, evidence-based decisions  
 - Reduce the analytical workload for clinicians and data teams  
-
-By turning raw clinical records into **fast, interpretable, and actionable insights**, this system supports a shift toward **proactive, data-driven patient care**.
 
