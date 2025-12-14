@@ -36,116 +36,163 @@
 # 🩺 Digital Health Clinical Analytics Platform  
 ### AI-Driven Risk Analysis & Decision Support for Heart Failure Patients
 
-The Digital Health Analytics Platform is an end-to-end clinical analytics system designed to help clinicians, data analysts, and researchers analyse heart-failure patient data, uncover hidden risk patterns, and support early clinical decision-making.
-
-It combines:
-
-- Automated data ingestion & cleaning
-- A reusable analytics engine (statistics + risk profiling)
-- An interactive Streamlit web interface
-- Optional ML-based single-patient risk prediction
-- Built using Python, Streamlit, Pandas, and Scikit-Learn, the platform transforms raw clinical data into interpretable visual insights that support proactive healthcare.
+The Digital Health Clinical Analytics Platform is an end-to-end clinical analytics system designed to support data-driven decision-making in heart failure care.
+The platform enables clinicians, analysts, and researchers to explore patient risk factors, identify mortality-associated patterns, and generate interpretable insights from structured clinical data without requiring advanced coding skills.
 
 ---
+🎯 Purpose & Motivation
+---
+Heart failure remains one of the leading causes of hospitalisation and mortality worldwide.
+Despite the availability of clinical data, many healthcare teams still rely on:
+- Fragmented spreadsheets
+- Manual record reviews
+- Static reports with limited analytical depth
+- Delayed insight generation
+
+These limitations make it difficult to:
+- Detect high-risk patient profiles early
+- Understand interactions between co-morbidities
+- Support timely, evidence-based clinical decisions
+This project was developed to bridge the gap between raw clinical data and practical clinical insight.
+
+---
+
+🚀 Solution Summary
+---
+The platform delivers a fully integrated clinical analytics workflow, combining:
+- Automated data ingestion & cleaning
+- Reusable analytics and risk-profiling engine
+- Interactive Streamlit web application
+- Optional machine-learning-based risk prediction
+- Exportable outputs for audit, research, and quality improvement
+
+---
+🧠 System Architecture
+---
+
+┌────────────────────────────┐
+│   Clinical Dataset (CSV)   │
+│  (UCI Heart Failure Data)  │
+└──────────────┬─────────────┘
+               ▼
+┌────────────────────────────┐
+│  Data Loading & Cleaning   │
+│  (analytics.py pipeline)   │
+└──────────────┬─────────────┘
+               ▼
+┌────────────────────────────┐
+│     Analytics Engine       │
+│ (statistics, risk logic,   │
+│  survival analysis, etc.)  │
+└──────────────┬─────────────┘
+               ▼
+┌────────────────────────────┐
+│   Streamlit Web Interface  │
+│ (UI, charts, interaction) │
+└──────────────┬─────────────┘
+               ▼
+┌────────────────────────────┐
+│  Results & Predictions     │
+│ (tables, plots, CSV, ML)   │
+└────────────────────────────┘
 
 The system is implemented across three core components:
 
 ### 🔹 1. Data Loading & Pre-Processing
-A custom-built ingestion pipeline loads clinical records from the **Heart Failure Clinical Records dataset**.  
-Key steps include:
+A robust ingestion pipeline that converts raw clinical data into clean, structured, and traceable records.
 
-- CSV ingestion using `csv.DictReader`
-- Error & exception handling during file loading  
-- Automatic **schema mapping** into structured dictionaries  
-- Type conversion for all clinical variables  
-- Creation of a **unique `id` field** for each record (to support traceability & indexing)
-
----
-
-### 🔹 2. Query Module (Analytics & Risk Functions)
-
-The **QueryModule** class encapsulates all analytical functions the system provides.  
-It supports:
-
-- **Age statistics** (average, median, mode) for patients whose heart failure resulted in death  
-- **Survival-time analysis** for patients who recovered  
-- **Cardiovascular risk profiling** for:
-  - high blood pressure  
-  - diabetes  
-  - anaemia  
-- **Risk interaction analysis**:
-  - diabetes × smoking × high blood pressure  
-- **Serum sodium analysis** for diabetic patients  
-- **Risk factor sampling & variance metrics** (serum creatinine, CPK, etc.)
-- **Automatic CSV export** of all results for clinical audit or reporting
-
-This module acts as the system’s *analytics engine*.
+Key features:
+- CSV ingestion using csv.DictReader
+- Defensive error and exception handling
+- Automatic schema mapping into structured dictionaries
+- Explicit data-type conversion for all clinical variables
+- Unique patient ID generation to support traceability and indexing
+This layer ensures data quality, reproducibility, and analytical integrity.
 
 ---
 
-### 🔹 3. Interactive Streamlt Application 
+### 🔹 2. Analytics & Risk Engine (QueryModule)
 
-A structured, menu-driven application that allows users (clinicians, analysts, students) to:
+The QueryModule class acts as the core analytical engine of the system, encapsulating reusable clinical analytics logic.
 
-- Navigate eight health-analytics options  
-- Perform quick exploratory risk analysis  
-- Export analysis summaries as CSV files  
-- View results in tabulated format (`tabulate` library)
-- Visualisations:
-  - Age boxplot by outcome
-  - Survival time distribution
-  - Line charts
-  - Bar charts for grouped risk clusters
-- ML prediction
+Capabilities include:
+
+Descriptive & Survival Analytics
+- Age statistics (mean, median, mode) for fatal cases
+- Survival-time analysis for recovered patients
+
+Risk Profiling
+- Cardiovascular risk factors:
+    - High blood pressure
+    - Diabetes
+    - Anaemia
+
+- Lifestyle and condition interactions:
+    - Diabetes × Smoking × High Blood Pressure
+
+- Serum sodium analysis for diabetic patients
+- Risk factor sampling and variance metrics:
+    - Serum creatinine
+    - CPK
+    - Ejection fraction
+
+Governance & Reproducibility
+- Automatic CSV export of analytical results
+- Supports audit, clinical validation, and research workflows
 
 ---
 
-🔮 Single Patient Risk Prediction
+### 🔹 3. Interactive Web Application 
 
-Uses a pre-trained Random Forest classifier to estimate mortality risk for a new patient based on:
+A menu-driven, clinician-friendly interface that enables users to perform advanced analytics without writing code.
+
+Users can:
+
+- Navigate 8 structured health-analytics modules
+- Perform exploratory risk analysis
+- View results in formatted tables
+- Export outputs as CSV files
+- Visualise insights using interactive charts
+
+Visualisations include:
+
+- Age boxplots by survival outcome
+- Survival-time distributions
+- Bar charts for risk clusters
+- Line charts for trend exploration
+
+---
+
+🔮 Machine Learning: Single-Patient Risk Prediction
+---
+
+The platform includes an optional AI-based risk prediction module.
+
+Model
+- Random Forest Classifier
+
+Input Features
 - Age
 - Anaemia
 - Diabetes
-- High BP
+- High blood pressure
 - Smoking
 - Ejection fraction
 - Serum creatinine
 - Serum sodium
 - Follow-up time
 
----
+Outputs
+- Mortality risk prediction
+- Model performance metrics:
+    - Accuracy
+    - ROC-AUC
+    - Confusion matrix
+    - Classification report
 
+Feature importance visualisation
 
-
-##  System Architecture diagram
-
-                   ┌────────────────────────┐
-                   │   Clinical Dataset      │
-                   │ (CSV – UCI Repository)  │
-                   └───────────┬────────────┘
-                               ▼
-                 ┌────────────────────────────┐
-                 │  Data Loading & Cleaning   │
-                 │  (analytics.py pipeline)   │
-                 └───────────┬───────────────┘
-                               ▼
-                 ┌────────────────────────────┐
-                 │     Analytics Engine       │
-                 │ (risk profiling, stats,    │
-                 │  survival analysis, etc.)  │
-                 └───────────┬───────────────┘
-                               ▼
-              ┌───────────────────────────────────┐
-              │        Streamlit Application       │
-              │ (UI, charts, menu-driven analysis) │
-              └───────────┬───────────────────────┘
-                          ▼
-              ┌───────────────────────────────────┐
-              │        Results & Predictions       │
-              │ (tables, plots, CSV export, ML)    │
-              └───────────────────────────────────┘
-
-
+This module supports early risk stratification and clinical decision support.
 
 ---
 
