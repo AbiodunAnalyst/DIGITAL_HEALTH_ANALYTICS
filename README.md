@@ -60,33 +60,60 @@ This project was developed to bridge the gap between raw clinical data and pract
 
 ---
 
-┌────────────────────────────┐
-│   Clinical Dataset (CSV)   │
-│  (UCI Heart Failure Data)  │
-└──────────────┬─────────────┘
-               ▼
-┌────────────────────────────┐
-│  Data Loading & Cleaning   │
-│  (analytics.py pipeline)   │
-└──────────────┬─────────────┘
-               ▼
-┌────────────────────────────┐
-│     Analytics Engine       │
-│ (statistics, risk logic,   │
-│  survival analysis, etc.)  │
-└──────────────┬─────────────┘
-               ▼
-┌────────────────────────────┐
-│   Streamlit Web Interface  │
-│ (UI, charts, interaction)  │
-└──────────────┬─────────────┘
-               ▼
-┌────────────────────────────┐
-│  Results & Predictions     │
-│ (tables, plots, CSV, ML)   │
-└────────────────────────────┘
+    ┌────────────────────────────┐
+    │   Clinical Dataset (CSV)   │
+    │  (UCI Heart Failure Data)  │
+    └──────────────┬─────────────┘
+                   ▼
+    ┌────────────────────────────┐
+    │  Data Loading & Cleaning   │
+    │  (analytics.py pipeline)   │
+    └──────────────┬─────────────┘
+                   ▼
+    ┌────────────────────────────┐
+    │     Analytics Engine       │
+    │ (statistics, risk logic,   │
+    │  survival analysis, etc.)  │
+    └──────────────┬─────────────┘
+                   ▼
+    ┌────────────────────────────┐
+    │   Streamlit Web Interface  │
+    │ (UI, charts, interaction)  │
+    └──────────────┬─────────────┘
+                   ▼
+    ┌────────────────────────────┐
+    │  Results & Predictions     │
+    │ (tables, plots, CSV, ML)   │
+    └────────────────────────────┘
 
 ---
+                   ┌────────────────────────┐
+                   │   Clinical Dataset      │
+                   │ (CSV – UCI Repository)  │
+                   └───────────┬────────────┘
+                               ▼
+                 ┌────────────────────────────┐
+                 │ Data Loading & Cleaning    │
+                 │   (analytics.py pipeline)  │
+                 └───────────┬───────────────┘
+                               ▼
+                 ┌────────────────────────────┐
+                 │     Analytics Engine       │
+                 │ (risk profiling, stats,    │
+                 │  survival analysis, etc.)  │
+                 └───────────┬───────────────┘
+                               ▼
+           ┌─────────────────────────────────────────┐
+           │         Streamlit Web Application        │
+           │ (interactive menus, charts, tables, ML)  │
+           └──────────┬──────────────────────────────┘
+                      ▼
+           ┌─────────────────────────────────────────┐
+           │       Results, Exports & Predictions     │
+           │ (charts, CSV downloads, ML outcomes)     │
+           └─────────────────────────────────────────┘
+---
+
 
 The system is implemented across three core components:
 
