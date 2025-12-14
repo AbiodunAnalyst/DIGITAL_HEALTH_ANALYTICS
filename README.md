@@ -96,6 +96,8 @@ The platform delivers a fully integrated clinical analytics workflow, combining:
 │ (tables, plots, CSV, ML)   │
 └────────────────────────────┘
 
+---
+
 The system is implemented across three core components:
 
 ### 🔹 1. Data Loading & Pre-Processing
@@ -126,16 +128,13 @@ Risk Profiling
     - High blood pressure
     - Diabetes
     - Anaemia
-
 - Lifestyle and condition interactions:
     - Diabetes × Smoking × High Blood Pressure
-
 - Serum sodium analysis for diabetic patients
 - Risk factor sampling and variance metrics:
     - Serum creatinine
     - CPK
     - Ejection fraction
-
 Governance & Reproducibility
 - Automatic CSV export of analytical results
 - Supports audit, clinical validation, and research workflows
@@ -147,7 +146,6 @@ Governance & Reproducibility
 A menu-driven, clinician-friendly interface that enables users to perform advanced analytics without writing code.
 
 Users can:
-
 - Navigate 8 structured health-analytics modules
 - Perform exploratory risk analysis
 - View results in formatted tables
@@ -155,7 +153,6 @@ Users can:
 - Visualise insights using interactive charts
 
 Visualisations include:
-
 - Age boxplots by survival outcome
 - Survival-time distributions
 - Bar charts for risk clusters
