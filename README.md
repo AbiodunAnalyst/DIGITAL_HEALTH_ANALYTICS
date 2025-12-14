@@ -56,18 +56,8 @@ These limitations make it difficult to:
 This project was developed to bridge the gap between raw clinical data and practical clinical insight.
 
 ---
-
-🚀 Solution Summary
----
-The platform delivers a fully integrated clinical analytics workflow, combining:
-- Automated data ingestion & cleaning
-- Reusable analytics and risk-profiling engine
-- Interactive Streamlit web application
-- Optional machine-learning-based risk prediction
-- Exportable outputs for audit, research, and quality improvement
-
----
 🧠 System Architecture
+
 ---
 
 ┌────────────────────────────┐
@@ -88,7 +78,7 @@ The platform delivers a fully integrated clinical analytics workflow, combining:
                ▼
 ┌────────────────────────────┐
 │   Streamlit Web Interface  │
-│ (UI, charts, interaction) │
+│ (UI, charts, interaction)  │
 └──────────────┬─────────────┘
                ▼
 ┌────────────────────────────┐
@@ -119,25 +109,24 @@ The QueryModule class acts as the core analytical engine of the system, encapsul
 
 Capabilities include:
 
-Descriptive & Survival Analytics
-- Age statistics (mean, median, mode) for fatal cases
-- Survival-time analysis for recovered patients
-
-Risk Profiling
-- Cardiovascular risk factors:
-    - High blood pressure
-    - Diabetes
-    - Anaemia
-- Lifestyle and condition interactions:
-    - Diabetes × Smoking × High Blood Pressure
-- Serum sodium analysis for diabetic patients
-- Risk factor sampling and variance metrics:
-    - Serum creatinine
-    - CPK
-    - Ejection fraction
-Governance & Reproducibility
-- Automatic CSV export of analytical results
-- Supports audit, clinical validation, and research workflows
+1. Descriptive & Survival Analytics
+  - Age statistics (mean, median, mode) for fatal cases
+  - Survival-time analysis for recovered patients
+2. Risk Profiling
+  - Cardiovascular risk factors:
+      - High blood pressure
+      - Diabetes
+      - Anaemia
+  - Lifestyle and condition interactions:
+      - Diabetes × Smoking × High Blood Pressure
+  - Serum sodium analysis for diabetic patients
+  - Risk factor sampling and variance metrics:
+      - Serum creatinine
+      - CPK
+      - Ejection fraction
+3. Governance & Reproducibility
+  - Automatic CSV export of analytical results
+  - Supports audit, clinical validation, and research workflows
 
 ---
 
