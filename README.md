@@ -155,27 +155,27 @@ A menu-driven, clinician-friendly interface that enables users to perform advanc
 The platform includes an optional AI-based risk prediction module.
 
 **Model**
-    - Random Forest Classifier
+  - Random Forest Classifier
 
 **Input Features**
-    - Age
-    - Anaemia
-    - Diabetes
-    - High blood pressure
-    - Smoking
-    - Ejection fraction
-    - Serum creatinine
-    - Serum sodium
-    - Follow-up time
+  - Age
+  - Anaemia
+  - Diabetes
+  - High blood pressure
+  - Smoking
+  - Ejection fraction
+  - Serum creatinine
+  - Serum sodium
+  - Follow-up time
 
 **Outputs**
-    - Mortality risk prediction
-    - Model performance metrics:
-        - Accuracy
-        - ROC-AUC
-        - Confusion matrix
-        - Classification report
-    - Feature importance visualisation
+  - Mortality risk prediction
+  - Model performance metrics:
+      - Accuracy
+      - ROC-AUC
+      - Confusion matrix
+      - Classification report
+  - Feature importance visualisation
 
 **This module supports early risk stratification and clinical decision support.**
 
