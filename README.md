@@ -88,12 +88,12 @@ This project was developed to bridge the gap between raw clinical data and pract
 
 ---
 
-The system is implemented across three core components:
+**The system is implemented across three core components:**
 
 ### 🔹 1. Data Loading & Pre-Processing
 A robust ingestion pipeline that converts raw clinical data into clean, structured, and traceable records.
 
-Key features:
+**Key features:**
 - CSV ingestion using csv.DictReader
 - Defensive error and exception handling
 - Automatic schema mapping into structured dictionaries
@@ -134,14 +134,14 @@ Capabilities include:
 
 A menu-driven, clinician-friendly interface that enables users to perform advanced analytics without writing code.
 
-Users can:
+**Users can:**
 - Navigate 8 structured health-analytics modules
 - Perform exploratory risk analysis
 - View results in formatted tables
 - Export outputs as CSV files
 - Visualise insights using interactive charts
 
-Visualisations include:
+**Visualisations include:**
 - Age boxplots by survival outcome
 - Survival-time distributions
 - Bar charts for risk clusters
@@ -154,10 +154,10 @@ Visualisations include:
 
 The platform includes an optional AI-based risk prediction module.
 
-Model
+**Model**
 - Random Forest Classifier
 
-Input Features
+**Input Features**
 - Age
 - Anaemia
 - Diabetes
@@ -168,7 +168,7 @@ Input Features
 - Serum sodium
 - Follow-up time
 
-Outputs
+**Outputs**
 - Mortality risk prediction
 - Model performance metrics:
     - Accuracy
@@ -177,7 +177,7 @@ Outputs
     - Classification report
 - Feature importance visualisation
 
-This module supports early risk stratification and clinical decision support.
+**This module supports early risk stratification and clinical decision support.**
 
 ---
 
