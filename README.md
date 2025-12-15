@@ -188,24 +188,24 @@ To bridge this gap, I developed a **Digital Health Analytics Platform** a Web Ap
 
 ### 🚀 Features
 
-- **Data ingestion**
-    - Upload your own heart failure dataset (`.csv`) or use the built-in default file  
-    - Automatic cleaning and typing via `analytics.py`
+**Data ingestion**
+  - Upload your own heart failure dataset (`.csv`) or use the built-in default file  
+  - Automatic cleaning and typing via `analytics.py`
 
-- **Descriptive analytics**
-    - Global numeric summary (mean, std, quartiles, etc.)
-    - Age statistics for **fatal vs non-fatal** heart failure cases
-    - Survival time analysis for recovered patients
-    - Cardiometabolic risk clustering (High BP × Diabetes × Anaemia)
-    - Lifestyle risk interactions (Smoking × Diabetes × High BP)
-    - Serum sodium comparison for diabetic vs non-diabetic patients
+**Descriptive analytics**
+  - Global numeric summary (mean, std, quartiles, etc.)
+  - Age statistics for **fatal vs non-fatal** heart failure cases
+  - Survival time analysis for recovered patients
+  - Cardiometabolic risk clustering (High BP × Diabetes × Anaemia)
+  - Lifestyle risk interactions (Smoking × Diabetes × High BP)
+  - Serum sodium comparison for diabetic vs non-diabetic patients
 
-- **Visualisations**
+**Visualisations**
     - Boxplot of age by outcome (survived vs died)
     - Line chart of survival time distribution
     - Bar charts of risk cluster distributions
 
-- **Machine learning**
+**Machine learning**
     - Train a **Random Forest classifier** on the dataset
     - Adjust number of trees and max depth from the sidebar
     - See Accuracy, ROC AUC, confusion matrix, and classification report
