@@ -110,23 +110,23 @@ The QueryModule class acts as the core analytical engine of the system, encapsul
 Capabilities include:
 
 1. Descriptive & Survival Analytics
-  - Age statistics (mean, median, mode) for fatal cases
-  - Survival-time analysis for recovered patients
+    - Age statistics (mean, median, mode) for fatal cases
+    - Survival-time analysis for recovered patients
 2. Risk Profiling
-  - Cardiovascular risk factors:
+    - Cardiovascular risk factors:
       - High blood pressure
       - Diabetes
       - Anaemia
-  - Lifestyle and condition interactions:
+    - Lifestyle and condition interactions:
       - Diabetes × Smoking × High Blood Pressure
-  - Serum sodium analysis for diabetic patients
-  - Risk factor sampling and variance metrics:
+    - Serum sodium analysis for diabetic patients
+    - Risk factor sampling and variance metrics:
       - Serum creatinine
       - CPK
       - Ejection fraction
 3. Governance & Reproducibility
-  - Automatic CSV export of analytical results
-  - Supports audit, clinical validation, and research workflows
+    - Automatic CSV export of analytical results
+    - Supports audit, clinical validation, and research workflows
 
 ---
 
