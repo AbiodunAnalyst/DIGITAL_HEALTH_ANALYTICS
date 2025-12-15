@@ -154,10 +154,10 @@ A menu-driven, clinician-friendly interface that enables users to perform advanc
 
 The platform includes an optional AI-based risk prediction module.
 
-**Model**
+Model
   - Random Forest Classifier
 
-**Input Features**
+Input Features
   - Age
   - Anaemia
   - Diabetes
@@ -168,7 +168,7 @@ The platform includes an optional AI-based risk prediction module.
   - Serum sodium
   - Follow-up time
 
-**Outputs**
+Outputs
   - Mortality risk prediction
   - Model performance metrics:
       - Accuracy
