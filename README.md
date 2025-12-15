@@ -135,17 +135,17 @@ Capabilities include:
 A menu-driven, clinician-friendly interface that enables users to perform advanced analytics without writing code.
 
 **Users can:**
-    - Navigate 8 structured health-analytics modules
-    - Perform exploratory risk analysis
-    - View results in formatted tables
-    - Export outputs as CSV files
-    - Visualise insights using interactive charts
+  - Navigate 8 structured health-analytics modules
+  - Perform exploratory risk analysis
+  - View results in formatted tables
+  - Export outputs as CSV files
+  - Visualise insights using interactive charts
 
 **Visualisations include:**
-    - Age boxplots by survival outcome
-    - Survival-time distributions
-    - Bar charts for risk clusters
-    - Line charts for trend exploration
+  - Age boxplots by survival outcome
+  - Survival-time distributions
+  - Bar charts for risk clusters
+  - Line charts for trend exploration
 
 ---
 
