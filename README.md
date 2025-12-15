@@ -135,17 +135,17 @@ Capabilities include:
 A menu-driven, clinician-friendly interface that enables users to perform advanced analytics without writing code.
 
 **Users can:**
-- Navigate 8 structured health-analytics modules
-- Perform exploratory risk analysis
-- View results in formatted tables
-- Export outputs as CSV files
-- Visualise insights using interactive charts
+  - Navigate 8 structured health-analytics modules
+  - Perform exploratory risk analysis
+  - View results in formatted tables
+  - Export outputs as CSV files
+  - Visualise insights using interactive charts
 
 **Visualisations include:**
-- Age boxplots by survival outcome
-- Survival-time distributions
-- Bar charts for risk clusters
-- Line charts for trend exploration
+  - Age boxplots by survival outcome
+  - Survival-time distributions
+  - Bar charts for risk clusters
+  - Line charts for trend exploration
 
 ---
 
@@ -155,27 +155,27 @@ A menu-driven, clinician-friendly interface that enables users to perform advanc
 The platform includes an optional AI-based risk prediction module.
 
 **Model**
-- Random Forest Classifier
+  - Random Forest Classifier
 
 **Input Features**
-- Age
-- Anaemia
-- Diabetes
-- High blood pressure
-- Smoking
-- Ejection fraction
-- Serum creatinine
-- Serum sodium
-- Follow-up time
+  - Age
+  - Anaemia
+  - Diabetes
+  - High blood pressure
+  - Smoking
+  - Ejection fraction
+  - Serum creatinine
+  - Serum sodium
+  - Follow-up time
 
 **Outputs**
-- Mortality risk prediction
-- Model performance metrics:
-    - Accuracy
-    - ROC-AUC
-    - Confusion matrix
-    - Classification report
-- Feature importance visualisation
+  - Mortality risk prediction
+  - Model performance metrics:
+      - Accuracy
+      - ROC-AUC
+      - Confusion matrix
+      - Classification report
+  - Feature importance visualisation
 
 **This module supports early risk stratification and clinical decision support.**
 
@@ -189,37 +189,36 @@ To bridge this gap, I developed a **Digital Health Analytics Platform** a Web Ap
 ### 🚀 Features
 
 - **Data ingestion**
-  - Upload your own heart failure dataset (`.csv`) or use the built-in default file  
-  - Automatic cleaning and typing via `analytics.py`
+    - Upload your own heart failure dataset (`.csv`) or use the built-in default file  
+    - Automatic cleaning and typing via `analytics.py`
 
 - **Descriptive analytics**
-  - Global numeric summary (mean, std, quartiles, etc.)
-  - Age statistics for **fatal vs non-fatal** heart failure cases
-  - Survival time analysis for recovered patients
-  - Cardiometabolic risk clustering (High BP × Diabetes × Anaemia)
-  - Lifestyle risk interactions (Smoking × Diabetes × High BP)
-  - Serum sodium comparison for diabetic vs non-diabetic patients
+    - Global numeric summary (mean, std, quartiles, etc.)
+    - Age statistics for **fatal vs non-fatal** heart failure cases
+    - Survival time analysis for recovered patients
+    - Cardiometabolic risk clustering (High BP × Diabetes × Anaemia)
+    - Lifestyle risk interactions (Smoking × Diabetes × High BP)
+    - Serum sodium comparison for diabetic vs non-diabetic patients
 
 - **Visualisations**
-  - Boxplot of age by outcome (survived vs died)
-  - Line chart of survival time distribution
-  - Bar charts of risk cluster distributions
+    - Boxplot of age by outcome (survived vs died)
+    - Line chart of survival time distribution
+    - Bar charts of risk cluster distributions
 
 - **Machine learning**
-  - Train a **Random Forest classifier** on the dataset
-  - Adjust number of trees and max depth from the sidebar
-  - See Accuracy, ROC AUC, confusion matrix, and classification report
-  - Visualise feature importance
-  - Use an interactive form to predict risk for a **single patient**
+    - Train a **Random Forest classifier** on the dataset
+    - Adjust number of trees and max depth from the sidebar
+    - See Accuracy, ROC AUC, confusion matrix, and classification report
+    - Visualise feature importance
+    - Use an interactive form to predict risk for a **single patient**
 
 **Health_app** *[Health_app](https://digitalhealthanalytics-ciakssrts5fjppxcjpwmy6.streamlit.app)*
 
 ### 🩺 Clinical Impact
 This platform enables healthcare teams to:
-
-- Detect high-risk patient profiles earlier  
-- Understand mortality-linked patterns at a glance  
-- Analyse multiple clinical and lifestyle factors simultaneously  
-- Make faster, evidence-based decisions  
-- Reduce the analytical workload for clinicians and data teams  
+  - Detect high-risk patient profiles earlier  
+  - Understand mortality-linked patterns at a glance  
+  - Analyse multiple clinical and lifestyle factors simultaneously  
+  - Make faster, evidence-based decisions  
+  - Reduce the analytical workload for clinicians and data teams  
 
