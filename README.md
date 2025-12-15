@@ -87,33 +87,6 @@ This project was developed to bridge the gap between raw clinical data and pract
     └────────────────────────────┘
 
 ---
-                   ┌────────────────────────┐
-                   │   Clinical Dataset      │
-                   │ (CSV – UCI Repository)  │
-                   └───────────┬────────────┘
-                               ▼
-                 ┌────────────────────────────┐
-                 │ Data Loading & Cleaning    │
-                 │   (analytics.py pipeline)  │
-                 └───────────┬───────────────┘
-                               ▼
-                 ┌────────────────────────────┐
-                 │     Analytics Engine       │
-                 │ (risk profiling, stats,    │
-                 │  survival analysis, etc.)  │
-                 └───────────┬───────────────┘
-                               ▼
-           ┌─────────────────────────────────────────┐
-           │         Streamlit Web Application        │
-           │ (interactive menus, charts, tables, ML)  │
-           └──────────┬──────────────────────────────┘
-                      ▼
-           ┌─────────────────────────────────────────┐
-           │       Results, Exports & Predictions     │
-           │ (charts, CSV downloads, ML outcomes)     │
-           └─────────────────────────────────────────┘
----
-
 
 The system is implemented across three core components:
 
@@ -202,37 +175,14 @@ Outputs
     - ROC-AUC
     - Confusion matrix
     - Classification report
-
-Feature importance visualisation
+- Feature importance visualisation
 
 This module supports early risk stratification and clinical decision support.
 
 ---
 
-## 🩺 Problem → Solution Narrative
-
-### 🔍 The Problem
-Heart failure remains one of the leading causes of hospitalisation and mortality worldwide.  
-Clinicians frequently rely on fragmented spreadsheets, manual review, or delayed reporting to understand patient risks and identify deterioration patterns.
-
-Key challenges include:
-
-- Disconnected and inconsistently formatted clinical datasets  
-- Limited ability to quickly explore mortality-associated risk factors  
-- Difficulty analysing interactions between conditions (e.g., diabetes × hypertension × smoking)  
-- No simple tool for clinicians to run data-driven queries without coding  
-- Lack of automated exports for audits, research, or quality improvement  
-
-This leads to:
-- Missed high-risk patterns
-- Slow decision-making
-- No easy understanding of interactions between conditions (e.g., diabetes × hypertension × smoking)
-- No accessible analytics tools for clinicians who cannot code
-
----
-
 ### 🚀 The Solution
-To bridge this gap, I developed a **Digital Health Analytics Platform** a Streamlit Web Application system that transforms raw clinical data into actionable insights.
+To bridge this gap, I developed a **Digital Health Analytics Platform** a Web Application system that transforms raw clinical data into actionable insights.
 
 ---
 
