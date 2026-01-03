@@ -146,91 +146,62 @@ Capabilities include:
 ---
 **Development Phase**
 ---
-1. **Data Quality steps**: I implemented data quality checks including 
-  - Missing value handling strategy
-  - Outlier detection
-  - Feature validation
-  - Data leakage prevention
-
+1. **Data Quality steps**: I implemented data quality checks which includes:
+    - Missing value handling strategy
+    - Outlier detection
+    - Feature validation
+    - Data leakage prevention
+---
 Given the clinical context and the need for interpretable yet high-performing risk predictions, I evaluated multiple Imbalanced data method, and  machine learning models to identify the most appropriate approach for predicting patient risk outcomes.
+---
+2. **Handing Imbalanced data**: I compare different imbalanced method such as:
+  - BorderlineSMOTE
+  - TomekLinks
+  - SMOTE
+  - RandomOverSampler
 
-**Handing Imbalanced data**: I compare different imbalanced method such as:
-- BorderlineSMOTE
-- TomekLinks
-- SMOTE
-- RandomOverSampler
+3. **Machine learning model**: I compare different Machine learning model such as:
+  - Random forest model
+  - Logistic regression model
+  - Support vector model
 
-**Machine learning model**: I compare different Machine learning model such as:
-- Random forest model
-- Logistic regression model
-- Support vector model
-
-**Optimization Method**
-- GridSearchCV
-
-**Model Validation & Evaluation**
-I implemented Model Validation & Evaluation which including 
-- Train/test split 
-- Metric selection justification
-- ROC-AUC 
-- Confusion matrix
-
+4. **Optimization Method**
+  - GridSearchCV
+---
 The dataset was split into training and test sets to evaluate generalisation. Model performance was assessed using precision, recall, F1-score, accuracy, and ROC-AUC to reflect the clinical risk prediction context. ROC-AUC was prioritised due to class imbalance and the need for threshold-independent discrimination. Confusion matrix analysis was used to examine false positives and false negatives. Comparison of training and test ROC-AUC scores indicated strong generalisation without significant overfitting.
+---
+5. **Model Validation & Evaluation**: I implemented Model Validation & Evaluation which includes:
+  - Train/test split 
+  - Metric selection justification
+  - ROC-AUC 
+  - Confusion matrix
 
 ---
 **Model performance comparism**
-
-Random Forest model + Tomeklink
+---
 
 <img width="209" height="252" alt="image" src="https://github.com/user-attachments/assets/292b38c1-6543-4ed2-bf7c-db918dc89a35" />
+Random Forest model + Tomeklink
 
-Logistic regression + SMOTE
 
 <img width="212" height="240" alt="image" src="https://github.com/user-attachments/assets/cf473646-5212-45ca-8c0c-c4e8d8ae1a30" />
+Logistic regression + SMOTE
 
-Support vector model +  Tomeklink
 
 <img width="212" height="238" alt="image" src="https://github.com/user-attachments/assets/ad86bb10-01b0-4f8f-b872-de63db267d28" />
+Support vector model +  Tomeklink
 
-Random Forest model + Tomeklink + baseline data
 
 <img width="200" height="245" alt="image" src="https://github.com/user-attachments/assets/fb2ab411-9f2f-489e-8279-1ecc55d474d4" />
+Random Forest model + Tomeklink + baseline data
 
-Logistic regression + Borderline SMOTE
 
 <img width="212" height="239" alt="image" src="https://github.com/user-attachments/assets/edc30935-f122-41c6-8293-bbec4c7d0e7d" />
+Logistic regression + Borderline SMOTE
 
-Random Forest model + Random oversampler + Gridsearch
 
 <img width="211" height="245" alt="image" src="https://github.com/user-attachments/assets/41edf623-c94a-47ea-acf0-52b2db46294f" />
-
----
-The platform includes an optional AI-based risk prediction module.
-
-Model
-  - Random Forest Classifier
-
-Input Features
-  - Age
-  - Anaemia
-  - Diabetes
-  - High blood pressure
-  - Smoking
-  - Ejection fraction
-  - Serum creatinine
-  - Serum sodium
-  - Follow-up time
-
-Outputs
-  - Mortality risk prediction
-  - Model performance metrics:
-      - Accuracy
-      - ROC-AUC
-      - Confusion matrix
-      - Classification report
-  - Feature importance visualisation
-
-**This module supports early risk stratification and clinical decision support.**
+Random Forest model + Random oversampler + Gridsearch
 
 ---
 
