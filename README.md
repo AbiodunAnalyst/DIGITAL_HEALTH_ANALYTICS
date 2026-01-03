@@ -40,6 +40,14 @@ The Digital Health Clinical Analytics Platform is an end-to-end clinical analyti
 The platform enables clinicians, analysts, and researchers to explore patient risk factors, identify mortality-associated patterns, and generate interpretable insights from structured clinical data without requiring advanced coding skills.
 
 ---
+My Role & Contribution
+---
+- Designed the system architecture
+- Developed the ML engine (Model)
+- Built the interactive UI
+- Integrated data quality pipelines
+
+---
 🎯 Purpose & Motivation
 ---
 Heart failure remains one of the leading causes of hospitalisation and mortality worldwide.
