@@ -214,6 +214,7 @@ Random Forest model + Random oversampler + Gridsearch
 <img width="211" height="245" alt="image" src="https://github.com/user-attachments/assets/41edf623-c94a-47ea-acf0-52b2db46294f" />
 
 fig-6
+
 ---
 ### 🚀 The Solution
 To bridge this gap, I developed a **Digital Health Analytics Platform**, a Web Application system that transforms raw clinical data into actionable insights.
