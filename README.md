@@ -254,11 +254,7 @@ To bridge this gap, I developed a **Digital Health Analytics Platform**, a Web A
     - Bar charts of risk cluster distributions
 
 ### **Machine learning**
-    - Train a Random Forest classifier on the dataset
-    - Adjust number of trees and max depth from the sidebar
-    - See Accuracy, ROC AUC, confusion matrix, and classification report
-    - Visualise feature importance
-    - Use an interactive form to predict risk for a **single patient**
+    - Predict risk for a single patient
 
 **Health_app** *[Health_app](https://digitalhealthanalytics-ciakssrts5fjppxcjpwmy6.streamlit.app)*
 
