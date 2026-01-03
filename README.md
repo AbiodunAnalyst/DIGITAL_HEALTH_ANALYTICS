@@ -216,7 +216,7 @@ Random Forest model + Random oversampler + Gridsearch
 fig-6
 
 ---
-### 🚀 The Solution
+### 🔹 4. Web Application 
 To bridge this gap, I developed a **Digital Health Analytics Platform**, a Web Application system that transforms raw clinical data into actionable insights.
 
 ---
