@@ -180,31 +180,25 @@ The dataset was split into training and test sets to evaluate generalisation. Mo
 **Model performance comparism**
 
 - Random Forest model + Tomeklink
-
 <img width="209" height="252" alt="image" src="https://github.com/user-attachments/assets/292b38c1-6543-4ed2-bf7c-db918dc89a35" />
 
 - Logistic regression + SMOTE
-
 <img width="212" height="240" alt="image" src="https://github.com/user-attachments/assets/cf473646-5212-45ca-8c0c-c4e8d8ae1a30" />
 
 
 - Support vector model +  Tomeklink
-
 <img width="212" height="238" alt="image" src="https://github.com/user-attachments/assets/ad86bb10-01b0-4f8f-b872-de63db267d28" />
 
 
 - Random Forest model + Tomeklink + baseline data
-
 <img width="200" height="245" alt="image" src="https://github.com/user-attachments/assets/fb2ab411-9f2f-489e-8279-1ecc55d474d4" />
 
 
 - Logistic regression + Borderline SMOTE
-
 <img width="212" height="239" alt="image" src="https://github.com/user-attachments/assets/edc30935-f122-41c6-8293-bbec4c7d0e7d" />
 
 
 - Random Forest model + Random oversampler + Gridsearch
-
 <img width="211" height="245" alt="image" src="https://github.com/user-attachments/assets/41edf623-c94a-47ea-acf0-52b2db46294f" />
 
 ---
