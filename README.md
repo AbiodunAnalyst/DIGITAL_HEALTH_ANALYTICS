@@ -85,7 +85,12 @@ This project was developed to bridge the gap between raw clinical data and pract
     └──────────────┬─────────────┘
                    ▼
     ┌────────────────────────────┐
-    │   Streamlit Web Interface  │
+    │       ML development       │
+    │ (UI, charts, interaction)  │
+    └──────────────┬─────────────┘
+                   ▼
+    ┌────────────────────────────┐
+    │       Web Interface        │
     │ (UI, charts, interaction)  │
     └──────────────┬─────────────┘
                    ▼
@@ -96,7 +101,7 @@ This project was developed to bridge the gap between raw clinical data and pract
 
 ---
 
-**The system is implemented across three core components:**
+**The system descriptive phase is implemented across three core components:**
 
 ### 🔹 1. Data Loading & Pre-Processing
 A robust ingestion pipeline that converts raw clinical data into clean, structured, and traceable records.
