@@ -248,12 +248,12 @@ To bridge this gap, I developed a **Digital Health Analytics Platform**, a Web A
   - Lifestyle risk interactions (Smoking × Diabetes × High BP)
   - Serum sodium comparison for diabetic vs non-diabetic patients
 
-**Visualisations**
+### **Visualisations**
     - Boxplot of age by outcome (survived vs died)
     - Line chart of survival time distribution
     - Bar charts of risk cluster distributions
 
-**Machine learning**
+### **Machine learning**
     - Train a **Random Forest classifier** on the dataset
     - Adjust number of trees and max depth from the sidebar
     - See Accuracy, ROC AUC, confusion matrix, and classification report
