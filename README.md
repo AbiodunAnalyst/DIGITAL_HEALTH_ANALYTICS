@@ -101,7 +101,7 @@ This project was developed to bridge the gap between raw clinical data and pract
 
 ---
 
-**The system descriptive phase is implemented across three core components:**
+**The system is implemented across four core components:**
 
 ### 🔹 1. Data Loading & Pre-Processing
 A robust ingestion pipeline that converts raw clinical data into clean, structured, and traceable records.
@@ -140,31 +140,68 @@ Capabilities include:
 3. Governance & Reproducibility
     - Automatic CSV export of analytical results
     - Supports audit, clinical validation, and research workflows
-
 ---
 
-### 🔹 3. Interactive Web Application 
+### 🔹 3. Machine Learning: Single-Patient Risk Prediction
+---
+**Development Phase**
 
-A menu-driven, clinician-friendly interface that enables users to perform advanced analytics without writing code.
+**Data Quality steps**
+I implemented data quality checks including 
+- Missing value handling strategy
+- Outlier detection
+- Feature validation
+- Data leakage prevention
 
-**Users can:**
-  - Navigate 8 structured health-analytics modules
-  - Perform exploratory risk analysis
-  - View results in formatted tables
-  - Export outputs as CSV files
-  - Visualise insights using interactive charts
+Given the clinical context and the need for interpretable yet high-performing risk predictions, I evaluated multiple Imbalanced data method, and  machine learning models to identify the most appropriate approach for predicting patient risk outcomes.
 
-**Visualisations include:**
-  - Age boxplots by survival outcome
-  - Survival-time distributions
-  - Bar charts for risk clusters
-  - Line charts for trend exploration
+**Handing Imbalanced data**
+I compare different imbalanced method such as:
+- BorderlineSMOTE
+- TomekLinks
+- SMOTE
+- RandomOverSampler
+
+**Machine learning model**
+I compare different Machine learning model such as:
+- Random forest model
+- Logistic regression model
+- Support vector model
+
+**Optimization Method**
+- GridSearchCV
+
+**Model Validation & Evaluation**
+I implemented Model Validation & Evaluation which including 
+- Train/test split 
+- Metric selection justification
+- ROC-AUC 
+- Confusion matrix
+
+The dataset was split into training and test sets to evaluate generalisation. Model performance was assessed using precision, recall, F1-score, accuracy, and ROC-AUC to reflect the clinical risk prediction context. ROC-AUC was prioritised due to class imbalance and the need for threshold-independent discrimination. Confusion matrix analysis was used to examine false positives and false negatives. Comparison of training and test ROC-AUC scores indicated strong generalisation without significant overfitting.
 
 ---
+**Model performance comparism**
 
-🔮 Machine Learning: Single-Patient Risk Prediction
+Random Forest model + Tomeklink
+<img width="209" height="252" alt="image" src="https://github.com/user-attachments/assets/292b38c1-6543-4ed2-bf7c-db918dc89a35" />
+
+Logistic regression + SMOTE
+<img width="212" height="240" alt="image" src="https://github.com/user-attachments/assets/cf473646-5212-45ca-8c0c-c4e8d8ae1a30" />
+
+Support vector model +  Tomeklink
+<img width="212" height="238" alt="image" src="https://github.com/user-attachments/assets/ad86bb10-01b0-4f8f-b872-de63db267d28" />
+
+Random Forest model + Tomeklink + baseline data
+<img width="200" height="245" alt="image" src="https://github.com/user-attachments/assets/fb2ab411-9f2f-489e-8279-1ecc55d474d4" />
+
+Logistic regression + Borderline SMOTE
+<img width="212" height="239" alt="image" src="https://github.com/user-attachments/assets/edc30935-f122-41c6-8293-bbec4c7d0e7d" />
+
+Random Forest model + Random oversampler + Gridsearch
+<img width="211" height="245" alt="image" src="https://github.com/user-attachments/assets/41edf623-c94a-47ea-acf0-52b2db46294f" />
+
 ---
-
 The platform includes an optional AI-based risk prediction module.
 
 Model
@@ -192,11 +229,10 @@ Outputs
 
 **This module supports early risk stratification and clinical decision support.**
 
-
 ---
 
 ### 🚀 The Solution
-To bridge this gap, I developed a **Digital Health Analytics Platform** a Web Application system that transforms raw clinical data into actionable insights.
+To bridge this gap, I developed a **Digital Health Analytics Platform**, a Web Application system that transforms raw clinical data into actionable insights.
 
 ---
 
