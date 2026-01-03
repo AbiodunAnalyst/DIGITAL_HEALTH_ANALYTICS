@@ -147,7 +147,7 @@ Capabilities include:
 **Development Phase**
 ---
 1. **Data Quality steps**:
-###  I implemented data quality checks which includes:
+  I implemented data quality checks which includes:
     - Missing value handling strategy
     - Outlier detection
     - Feature validation
@@ -156,14 +156,14 @@ Capabilities include:
 Considering the clinical setting and the necessity for comprehensible yet effective risk predictions, I assessed various imbalanced data techniques and machine learning models to determine the most suitable method for forecasting patient risk outcomes. 
 
 2. **Handing Imbalanced data**:
-### I compare different imbalanced method such as:
+  I compare different imbalanced method such as:
     - BorderlineSMOTE
     - TomekLinks
     - SMOTE
     - RandomOverSampler
 
 3. **Machine learning model**:
-### I compare different Machine learning model such as:
+  I compare different Machine learning model such as:
     - Random forest model
     - Logistic regression model
     - Support vector model
