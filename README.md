@@ -183,7 +183,7 @@ The dataset was split into training and test sets to evaluate generalisation. Mo
 ---
 **Model performance comparism**
 
-Random Forest model + Tomeklink
+Random Forest model + Tomeklink (Implemented model based on performance)
 
 <img width="209" height="252" alt="image" src="https://github.com/user-attachments/assets/292b38c1-6543-4ed2-bf7c-db918dc89a35" />
 
