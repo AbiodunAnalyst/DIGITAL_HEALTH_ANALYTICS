@@ -152,7 +152,7 @@ Capabilities include:
     - Feature validation
     - Data leakage prevention
 ---
-Given the clinical context and the need for interpretable yet high-performing risk predictions, I evaluated multiple Imbalanced data method, and  machine learning models to identify the most appropriate approach for predicting patient risk outcomes.
+Considering the clinical setting and the necessity for comprehensible yet effective risk predictions, I assessed various imbalanced data techniques and machine learning models to determine the most suitable method for forecasting patient risk outcomes. 
 
 2. **Handing Imbalanced data**: I compare different imbalanced method such as:
   - BorderlineSMOTE
@@ -179,29 +179,34 @@ The dataset was split into training and test sets to evaluate generalisation. Mo
 ---
 **Model performance comparism**
 ---
-
-<img width="209" height="252" alt="image" src="https://github.com/user-attachments/assets/292b38c1-6543-4ed2-bf7c-db918dc89a35" />
 Random Forest model + Tomeklink
----
+<img width="209" height="252" alt="image" src="https://github.com/user-attachments/assets/292b38c1-6543-4ed2-bf7c-db918dc89a35" />
+fig-1
 
-<img width="212" height="240" alt="image" src="https://github.com/user-attachments/assets/cf473646-5212-45ca-8c0c-c4e8d8ae1a30" />
+
 Logistic regression + SMOTE
----
+<img width="212" height="240" alt="image" src="https://github.com/user-attachments/assets/cf473646-5212-45ca-8c0c-c4e8d8ae1a30" />
+fig-2
 
-<img width="212" height="238" alt="image" src="https://github.com/user-attachments/assets/ad86bb10-01b0-4f8f-b872-de63db267d28" />
+---
 Support vector model +  Tomeklink
----
+<img width="212" height="238" alt="image" src="https://github.com/user-attachments/assets/ad86bb10-01b0-4f8f-b872-de63db267d28" />
+fig-3
 
-<img width="200" height="245" alt="image" src="https://github.com/user-attachments/assets/fb2ab411-9f2f-489e-8279-1ecc55d474d4" />
+---
 Random Forest model + Tomeklink + baseline data
----
+<img width="200" height="245" alt="image" src="https://github.com/user-attachments/assets/fb2ab411-9f2f-489e-8279-1ecc55d474d4" />
+fig-4
 
-<img width="212" height="239" alt="image" src="https://github.com/user-attachments/assets/edc30935-f122-41c6-8293-bbec4c7d0e7d" />
+---
 Logistic regression + Borderline SMOTE
----
+<img width="212" height="239" alt="image" src="https://github.com/user-attachments/assets/edc30935-f122-41c6-8293-bbec4c7d0e7d" />
+fig-5
 
-<img width="211" height="245" alt="image" src="https://github.com/user-attachments/assets/41edf623-c94a-47ea-acf0-52b2db46294f" />
+---
 Random Forest model + Random oversampler + Gridsearch
+<img width="211" height="245" alt="image" src="https://github.com/user-attachments/assets/41edf623-c94a-47ea-acf0-52b2db46294f" />
+fig-6
 
 ---
 
