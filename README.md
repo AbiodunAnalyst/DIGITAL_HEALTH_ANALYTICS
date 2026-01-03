@@ -171,13 +171,14 @@ Considering the clinical setting and the necessity for comprehensible yet effect
 4. **Optimization Method**
   - GridSearchCV
 ---
-The dataset was split into training and test sets to evaluate generalisation. Model performance was assessed using precision, recall, F1-score, accuracy, and ROC-AUC to reflect the clinical risk prediction context. ROC-AUC was prioritised due to class imbalance and the need for threshold-independent discrimination. Confusion matrix analysis was used to examine false positives and false negatives. Comparison of training and test ROC-AUC scores indicated strong generalisation without significant overfitting.
 
 5. **Model Validation & Evaluation**: I implemented Model Validation & Evaluation which includes:
   - Train/test split 
   - Metric selection justification
   - ROC-AUC 
   - Confusion matrix
+
+The dataset was split into training and test sets to evaluate generalisation. Model performance was assessed using precision, recall, F1-score, accuracy, and ROC-AUC to reflect the clinical risk prediction context. ROC-AUC was prioritised due to class imbalance and the need for threshold-independent discrimination. Confusion matrix analysis was used to examine false positives and false negatives. Comparison of training and test ROC-AUC scores indicated strong generalisation without significant overfitting.
 
 ---
 **Model performance comparism**
