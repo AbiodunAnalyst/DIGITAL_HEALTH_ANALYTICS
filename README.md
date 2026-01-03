@@ -145,13 +145,13 @@ Capabilities include:
 ### 🔹 3. Machine Learning: Single-Patient Risk Prediction
 ---
 **Development Phase**
-
-**Data Quality steps**
-I implemented data quality checks including 
-- Missing value handling strategy
-- Outlier detection
-- Feature validation
-- Data leakage prevention
+---
+1. **Data Quality steps**
+  I implemented data quality checks including 
+  - Missing value handling strategy
+  - Outlier detection
+  - Feature validation
+  - Data leakage prevention
 
 Given the clinical context and the need for interpretable yet high-performing risk predictions, I evaluated multiple Imbalanced data method, and  machine learning models to identify the most appropriate approach for predicting patient risk outcomes.
 
