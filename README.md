@@ -223,18 +223,18 @@ To bridge this gap, I developed a **Digital Health Analytics Platform**, a Web A
 
 ### Development Phase
 
-**Web code**
-- The Web code was Built in Virtual Studio using python
-
-**Requirement for deployment**
-- streamlit
-- pandas
-- numpy
-- matplotlib
-- scikit-learn
-
-**Deployment Platform**
-- Streamlit
+  **Web code**
+  - The Web code was Built in Virtual Studio using python
+  
+  **Requirement for deployment**
+  - streamlit
+  - pandas
+  - numpy
+  - matplotlib
+  - scikit-learn
+  
+  **Deployment Platform**
+  - Streamlit
 
 ### 🚀 Solution Features
 
