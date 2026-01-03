@@ -147,7 +147,7 @@ Capabilities include:
 **Development Phase**
 ---
 1. **Data Quality steps**
-  I implemented data quality checks including 
+I implemented data quality checks including 
   - Missing value handling strategy
   - Outlier detection
   - Feature validation
