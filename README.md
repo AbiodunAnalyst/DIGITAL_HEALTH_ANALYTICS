@@ -236,7 +236,7 @@ To bridge this gap, I developed a **Digital Health Analytics Platform**, a Web A
 **Deployment Platform**
 - Streamlit
 
-### 🚀 Features
+### 🚀 Solution Features
 
 **Data ingestion**
   - Upload your own heart failure dataset (`.csv`) or use the built-in default file  
