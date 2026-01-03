@@ -258,7 +258,7 @@ To bridge this gap, I developed a **Digital Health Analytics Platform**, a Web A
 
 **Health_app** *[Health_app](https://digitalhealthanalytics-ciakssrts5fjppxcjpwmy6.streamlit.app)*
 
-### 🩺 Clinical Impact
+### 🩺   Solution Clinical Impact
 This platform enables healthcare teams to:
   - Detect high-risk patient profiles earlier  
   - Understand mortality-linked patterns at a glance  
