@@ -183,7 +183,7 @@ The dataset was split into training and test sets to evaluate generalisation. Mo
 ---
 **Model performance comparism**
 
-Random Forest model + Tomeklink (Implemented model based on performance)
+Random Forest model + Tomeklink 
 
 <img width="209" height="252" alt="image" src="https://github.com/user-attachments/assets/292b38c1-6543-4ed2-bf7c-db918dc89a35" />
 
@@ -221,7 +221,7 @@ fig-6
 
 ---
 ### 🔹 4. Web Application 
-To bridge this gap, I developed a **Digital Health Analytics Platform**, a Web Application system that transforms raw clinical data into actionable insights.
+To bridge this gap, I developed a **Digital Health Analytics Platform**, a Web Application system that transforms raw clinical data into actionable insights and the final optimised model (Random Forest model + Tomeklink) was deployed  .
 
 ---
 
