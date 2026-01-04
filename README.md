@@ -227,7 +227,8 @@ To bridge this gap, I developed a **Digital Health Analytics Platform**, a Web A
 
 ### Development Phase
 ###  **Web Application Development**
-    The web application was developed using Python within Visual Studio Code, enabling rapid iteration, debugging, and version control during the development process.
+    The web application was developed using Python within Visual Studio Code, enabling rapid iteration, 
+    debugging, and version control during the development process.
   
 ###  **Core Libraries and Frameworks**
     - Streamlit - for building and deploying an interactive web-based analytics interface
@@ -235,10 +236,14 @@ To bridge this gap, I developed a **Digital Health Analytics Platform**, a Web A
     - Matplotlib - for data visualisation
     - Scikit-learn - for machine learning model development and evaluation
 ###  **Deployment Platform**
-    - The application was deployed using Streamlit, allowing the analytics platform and machine learning model to be accessed through a lightweight, browser-based interface without requiring complex infrastructure.
-    - Streamlit was selected for deployment due to its suitability for rapid prototyping of data-driven applications and its ability to make analytical insights accessible to non-technical users.
+    - The application was deployed using Streamlit, allowing the analytics platform and machine learning model to be accessed 
+      through a lightweight, browser-based interface without requiring complex infrastructure.
+    - Streamlit was selected for deployment due to its suitability for rapid prototyping of data-driven applications and its 
+      ability to make analytical insights accessible to non-technical users.
 
+---
 ### 🚀 Solution Features
+---
 
 **Data ingestion**
   - Upload your own heart failure dataset (`.csv`) or use the built-in default file  
