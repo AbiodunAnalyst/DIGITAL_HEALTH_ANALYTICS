@@ -86,7 +86,7 @@ This project was developed to bridge the gap between raw clinical data and pract
                    ▼
     ┌────────────────────────────┐
     │       ML development       │
-    │ (UI, charts, interaction)  │
+    │                            │
     └──────────────┬─────────────┘
                    ▼
     ┌────────────────────────────┐
