@@ -1,6 +1,6 @@
-streamlit
+streamlit==1.61.0
+starlette<0.48
 pandas
 numpy
 matplotlib
 scikit-learn
-
